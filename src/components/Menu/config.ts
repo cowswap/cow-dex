@@ -16,57 +16,49 @@ const config: MenuEntry[] = [
     },
     items: [
       {
-        label: 'LP Migration',
-        href: '/migrate',
-      },
-      {
         label: 'Exchange',
-        href: 'https://exchange.pancakeswap.finance/#/swap',
+        href: '/swap',
       },
       {
         label: 'Liquidity',
-        href: 'https://exchange.pancakeswap.finance/#/pool',
-      },
-      {
-        label: 'V1 Liquidity (Old)',
-        href: '/pool',
+        href: '/add',
       },
     ],
   },
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: 'https://pancakeswap.finance/farms',
+    href: '/farms',
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
     href: 'https://pancakeswap.finance/pools',
   },
-  {
-    label: 'Prediction',
-    icon: 'PredictionsIcon',
-    href: 'https://pancakeswap.finance/prediction',
-    status: {
-      text: 'BETA',
-      color: 'warning',
-    },
-  },
-  {
-    label: 'Lottery',
-    icon: 'TicketIcon',
-    href: 'https://pancakeswap.finance/lottery',
-  },
-  {
-    label: 'Collectibles',
-    icon: 'NftIcon',
-    href: 'https://pancakeswap.finance/nft',
-  },
-  {
-    label: 'Team Battle',
-    icon: 'TeamBattleIcon',
-    href: 'https://pancakeswap.finance/competition',
-  },
+  // {
+  //   label: 'Prediction',
+  //   icon: 'PredictionsIcon',
+  //   href: 'https://pancakeswap.finance/prediction',
+  //   status: {
+  //     text: 'BETA',
+  //     color: 'warning',
+  //   },
+  // },
+  // {
+  //   label: 'Lottery',
+  //   icon: 'TicketIcon',
+  //   href: 'https://pancakeswap.finance/lottery',
+  // },
+  // {
+  //   label: 'Collectibles',
+  //   icon: 'NftIcon',
+  //   href: 'https://pancakeswap.finance/nft',
+  // },
+  // {
+  //   label: 'Team Battle',
+  //   icon: 'TeamBattleIcon',
+  //   href: 'https://pancakeswap.finance/competition',
+  // },
   {
     label: 'Teams & Profile',
     icon: 'GroupsIcon',
@@ -107,11 +99,11 @@ const config: MenuEntry[] = [
       },
     ],
   },
-  {
-    label: 'IFO',
-    icon: 'IfoIcon',
-    href: 'https://pancakeswap.finance/ifo',
-  },
+  // {
+  //   label: 'IFO',
+  //   icon: 'IfoIcon',
+  //   href: 'https://pancakeswap.finance/ifo',
+  // },
   {
     label: 'More',
     icon: 'MoreIcon',

@@ -1,6 +1,9 @@
-import { ChainId, JSBI, Percent, Token, WETH } from '@pancakeswap-libs/sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from '@lion.finance/sdk'
 
-export const ROUTER_ADDRESS = '0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F'
+export const ROUTER_ADDRESS = process.env.REACT_APP_ROUTER_ADDRESS || '0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F'
+export const FACTORY_ADDRESS = process.env.REACT_APP_FACTORY_ADDRESS || '0x0841BD0B734E4F5853f0dD8d7Ea041c241fb0Da6'
+export const INIT_CODE = process.env.INIT_CODE ||  '0x3462daf978afdfee74c371bd6832b9b3084cb2abc8de3f90b82f624ed0bcacaf'
+
 
 // a list of tokens by chain
 type ChainTokenList = {

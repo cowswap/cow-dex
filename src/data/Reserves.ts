@@ -1,8 +1,9 @@
-import { TokenAmount, Pair, Currency } from '@pancakeswap-libs/sdk'
+import { TokenAmount, Pair, Currency } from '@lion.finance/sdk'
 import { useMemo } from 'react'
 import { abi as IUniswapV2PairABI } from '@uniswap/v2-core/build/IUniswapV2Pair.json'
 import { Interface } from '@ethersproject/abi'
 import { useActiveWeb3React } from '../hooks'
+import { FACTORY_ADDRESS , INIT_CODE } from "../constants"
 
 import { useMultipleContractSingleData } from '../state/multicall/hooks'
 import { wrappedCurrency } from '../utils/wrappedCurrency'
@@ -31,7 +32,7 @@ export function usePairs(currencies: [Currency | undefined, Currency | undefined
   const pairAddresses = useMemo(
     () =>
       tokens.map(([tokenA, tokenB]) => {
-        return tokenA && tokenB && !tokenA.equals(tokenB) ? Pair.getAddress(tokenA, tokenB) : undefined
+        return tokenA && tokenB && !tokenA.equals(tokenB) ? Pair.getAddress(tokenA, tokenB, FACTORY_ADDRESS, INIT_CODE) : undefined
       }),
     [tokens]
   )
