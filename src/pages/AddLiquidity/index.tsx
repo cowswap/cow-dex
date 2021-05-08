@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react'
 import { BigNumber } from '@ethersproject/bignumber'
 import { TransactionResponse } from '@ethersproject/providers'
 import { Currency, currencyEquals, ETHER, TokenAmount, WETH } from '@lion.finance/sdk'
-import { Button, CardBody, AddIcon, Text as UIKitText } from '@pancakeswap-libs/uikit'
+import { Button, CardBody, AddIcon, Text as UIKitText } from '@cowswap/uikit'
 import { RouteComponentProps } from 'react-router-dom'
 import { LightCard } from 'components/Card'
 import { AutoColumn, ColumnCenter } from 'components/Column'
@@ -426,6 +426,7 @@ export default function AddLiquidity({
                         setShowConfirm(true)
                       }
                     }}
+                    // disabled
                     variant={
                       !isValid && !!parsedAmounts[Field.CURRENCY_A] && !!parsedAmounts[Field.CURRENCY_B]
                         ? 'danger'
@@ -433,7 +434,7 @@ export default function AddLiquidity({
                     }
                     width="100%"
                   >
-                    {error ?? "ADD"}
+                    {error ?? "Add liquidity"}
                   </Button>
                 </AutoColumn>
               )}

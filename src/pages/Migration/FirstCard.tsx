@@ -12,7 +12,7 @@ import {
   ArrowDownIcon,
   ErrorIcon,
   OpenNewIcon,
-} from '@pancakeswap-libs/uikit'
+} from '@cowswap/uikit'
 
 const otherProjects = [
   {

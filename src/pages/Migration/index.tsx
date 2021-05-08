@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Heading, Card, CardHeader, CardBody, Text, Button, Link, Flex, ArrowDownIcon } from '@pancakeswap-libs/uikit'
+import { Heading, Card, CardHeader, CardBody, Text, Button, Link, Flex, ArrowDownIcon } from '@cowswap/uikit'
 import Container from 'components/Container'
 import FirstCard from './FirstCard'
 import SecondCard from './SecondCard'

@@ -4,24 +4,19 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://pancakeswap.finance/',
+    href: '/',
   },
   {
     label: 'Trade',
     icon: 'TradeIcon',
-    initialOpenState: true,
-    status: {
-      text: 'MIGRATE',
-      color: 'warning',
-    },
     items: [
       {
         label: 'Exchange',
-        href: '/swap',
+        href: 'https://exchange.cowswap.finance/#/swap',
       },
       {
         label: 'Liquidity',
-        href: '/add',
+        href: 'https://exchange.cowswap.finance/#/pool',
       },
     ],
   },
@@ -29,51 +24,62 @@ const config: MenuEntry[] = [
     label: 'Farms',
     icon: 'FarmIcon',
     href: '/farms',
+    status: {
+      color: "failure", text: "LIVE"
+    }
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: 'https://pancakeswap.finance/pools',
+    href: '/pools',
   },
   // {
   //   label: 'Prediction',
   //   icon: 'PredictionsIcon',
-  //   href: 'https://pancakeswap.finance/prediction',
+  //   href: '/prediction',
   //   status: {
   //     text: 'BETA',
   //     color: 'warning',
   //   },
   // },
-  // {
-  //   label: 'Lottery',
-  //   icon: 'TicketIcon',
-  //   href: 'https://pancakeswap.finance/lottery',
-  // },
+  {
+    label: 'Lottery',
+    icon: 'TicketIcon',
+    href: '/',
+    status: {
+      text: 'COMMING',
+      color: 'warning',
+    },
+  },
   // {
   //   label: 'Collectibles',
   //   icon: 'NftIcon',
-  //   href: 'https://pancakeswap.finance/nft',
+  //   href: '/collectibles',
   // },
-  // {
-  //   label: 'Team Battle',
-  //   icon: 'TeamBattleIcon',
-  //   href: 'https://pancakeswap.finance/competition',
-  // },
+  {
+    label: 'NFT',
+    icon: 'TeamBattleIcon',
+    href: '/',
+    status: {
+      text: 'COMMING',
+      color: 'warning',
+    },
+  },
   {
     label: 'Teams & Profile',
     icon: 'GroupsIcon',
     items: [
       {
         label: 'Leaderboard',
-        href: 'https://pancakeswap.finance/teams',
+        href: '/teams',
       },
       {
         label: 'Task Center',
-        href: 'https://pancakeswap.finance/profile/tasks',
+        href: '/profile/tasks',
       },
       {
         label: 'Your Profile',
-        href: 'https://pancakeswap.finance/profile',
+        href: '/profile',
       },
     ],
   },
@@ -83,54 +89,54 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Overview',
-        href: 'https://pancakeswap.info',
+        href: 'https://cowswap.info',
       },
       {
         label: 'Tokens',
-        href: 'https://pancakeswap.info/tokens',
+        href: 'https://cowswap.info/tokens',
       },
       {
         label: 'Pairs',
-        href: 'https://pancakeswap.info/pairs',
+        href: 'https://cowswap.info/pairs',
       },
       {
         label: 'Accounts',
-        href: 'https://pancakeswap.info/accounts',
+        href: 'https://cowswap.info/accounts',
       },
     ],
   },
-  // {
-  //   label: 'IFO',
-  //   icon: 'IfoIcon',
-  //   href: 'https://pancakeswap.finance/ifo',
-  // },
+  {
+    label: 'IFO',
+    icon: 'IfoIcon',
+    href: '/',
+    status: {
+      text: 'COMMING',
+      color: 'warning',
+    },
+  },
   {
     label: 'More',
     icon: 'MoreIcon',
     items: [
       {
         label: 'Contact',
-        href: 'https://docs.pancakeswap.finance/contact-us',
+        href: 'https://docs.cowswap.finance/contact-us',
       },
       {
         label: 'Voting',
-        href: 'https://voting.pancakeswap.finance',
+        href: 'https://voting.cowswap.finance',
       },
       {
         label: 'Github',
-        href: 'https://github.com/pancakeswap',
+        href: 'https://github.com/cowswap',
       },
       {
         label: 'Docs',
-        href: 'https://docs.pancakeswap.finance',
+        href: 'https://docs.cowswap.finance',
       },
       {
         label: 'Blog',
-        href: 'https://pancakeswap.medium.com',
-      },
-      {
-        label: 'Merch',
-        href: 'https://pancakeswap.creator-spring.com/',
+        href: 'https://cowswap.medium.com',
       },
     ],
   },

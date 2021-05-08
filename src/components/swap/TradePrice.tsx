@@ -1,6 +1,6 @@
 import React from 'react'
 import { Price } from '@lion.finance/sdk'
-import { SyncAltIcon, Text } from '@pancakeswap-libs/uikit'
+import { SyncAltIcon, Text } from '@cowswap/uikit'
 import { StyledBalanceMaxMini } from './styleds'
 
 interface TradePriceProps {

@@ -8,7 +8,7 @@ import { FACTORY_ADDRESS , INIT_CODE } from "../constants"
 import { useMultipleContractSingleData } from '../state/multicall/hooks'
 import { wrappedCurrency } from '../utils/wrappedCurrency'
 
-const PAIR_INTERFACE = new Interface(IUniswapV2PairABI)
+export const PAIR_INTERFACE = new Interface(IUniswapV2PairABI)
 
 export enum PairState {
   LOADING,
@@ -38,6 +38,9 @@ export function usePairs(currencies: [Currency | undefined, Currency | undefined
   )
 
   const results = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'getReserves')
+  // console.debug({
+  //   results, pairAddresses, tokens, FACTORY_ADDRESS, INIT_CODE
+  // })
 
   return useMemo(() => {
     return results.map((result, i) => {

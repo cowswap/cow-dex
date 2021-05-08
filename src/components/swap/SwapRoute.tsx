@@ -1,7 +1,7 @@
 import { Trade } from '@lion.finance/sdk'
 import React, { Fragment, memo, useContext } from 'react'
 import { ChevronRight } from 'react-feather'
-import { Flex, Text } from '@pancakeswap-libs/uikit'
+import { Flex, Text } from '@cowswap/uikit'
 import { ThemeContext } from 'styled-components'
 import CurrencyLogo from '../CurrencyLogo'
 

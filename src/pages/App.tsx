@@ -2,7 +2,7 @@ import React, { Suspense, useEffect, useState } from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 import { Credentials, StringTranslations } from '@crowdin/crowdin-api-client'
-import { LangType } from '@pancakeswap-libs/uikit'
+import { Language } from 'constants/localisation/languageCodes'
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
 import { RedirectDuplicateTokenIds, RedirectOldAddLiquidityPathStructure } from './AddLiquidity/redirects'
@@ -94,7 +94,7 @@ export default function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedLanguage])
 
-  const handleLanguageSelect = (langObject: LangType) => {
+  const handleLanguageSelect = (langObject: Language) => {
     setSelectedLanguage(langObject)
     localStorage.setItem(CACHE_KEY, langObject.code)
   }
