@@ -38,7 +38,7 @@ const BodyWrapper = styled.div`
   }
 `
 
-const CACHE_KEY = 'pancakeSwapLanguage'
+const CACHE_KEY = 'cowswapLanguage'
 
 export default function App() {
   const [selectedLanguage, setSelectedLanguage] = useState<any>(undefined)

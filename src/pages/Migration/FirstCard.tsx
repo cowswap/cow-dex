@@ -84,7 +84,7 @@ const FirstCard = () => {
               All farms will gradually switch to new farms, one-by-one. You can wait until farms switch over, or you can
               unstake in advance.
             </Text>
-            <Button as={Link} external href="https://pancakeswap.finance/farms/history" style={{ width: '100%' }}>
+            <Button as={Link} external href="https://cowswap.finance/farms/history" style={{ width: '100%' }}>
               Go to Farms
             </Button>
           </CardBody>
@@ -106,7 +106,7 @@ const FirstCard = () => {
           </Flex>
           <FoldableContent isVisible={isVisible}>
             <Text mb="16px">
-              You may need to unstake any PancakeSwap LP Tokens that you’ve staked in yield aggregators or other
+              You may need to unstake any Cowswap LP Tokens that you’ve staked in yield aggregators or other
               projects. Here are some projects you might be using:
             </Text>
             <ul>

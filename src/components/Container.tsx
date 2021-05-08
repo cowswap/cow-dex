@@ -25,7 +25,7 @@ const Container = styled.div`
     background-repeat: no-repeat;
     background-position: bottom, top 10em left 8em, top 10em right 8em;
     background-size: contain, 266px, 266px;
-    min-height: 90vh;
+    min-height: 95vh;
   }
 `
 

@@ -34,7 +34,7 @@ const config = [
       {
         id: 999,
         fallback:
-          'In order to upgrade to a new exchange system, PancakeSwap has transferred (“migrated”) two of our current smart contracts to new, upgraded contracts.',
+          'In order to upgrade to a new exchange system, Cowswap has transferred (“migrated”) two of our current smart contracts to new, upgraded contracts.',
       },
       {
         id: 999,

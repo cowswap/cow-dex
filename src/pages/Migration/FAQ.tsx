@@ -19,7 +19,7 @@ const FAQ = () => {
         Learn more
       </Heading>
       <Text bold mb="24px">
-        Here’s what you need to know about the PancakeSwap LP Token Migration.
+        Here’s what you need to know about the Cowswap LP Token Migration.
       </Text>
       <Card>
         <CardHeader>

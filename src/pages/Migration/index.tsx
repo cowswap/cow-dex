@@ -32,7 +32,7 @@ const Migration = () => {
           LP Token Migration
         </Heading>
         <Text bold fontSize="24px">
-          PancakeSwap is being upgraded! <br />
+          Cowswap is being upgraded! <br />
           Migrate your LP tokens to continue earning.
         </Text>
       </Header>
@@ -51,7 +51,7 @@ const Migration = () => {
             </CardHeader>
             <CardBody>
               <Text mb="24px">Any new liquidity you add will use the updated system by default. Simple!</Text>
-              <Button as={Link} external href="https://exchange.pancakeswap.finance/#/pool" style={{ width: '100%' }}>
+              <Button as={Link} external href="https://exchange.cowswap.finance/#/pool" style={{ width: '100%' }}>
                 Add liquidity
               </Button>
             </CardBody>
@@ -61,7 +61,7 @@ const Migration = () => {
             <CardHeader>
               <Text bold>Stake in New Farms</Text>
               <Text small color="textSubtle">
-                Stake your updated LP tokens in PancakeSwap farms
+                Stake your updated LP tokens in Cowswap farms
               </Text>
             </CardHeader>
             <CardBody>
@@ -69,7 +69,7 @@ const Migration = () => {
                 If you are able to stake in a farm with your new LP tokens, that means it’s the updated type. Stake as
                 usual and you’re done!
               </Text>
-              <Button as={Link} external href="https://pancakeswap.finance/farms" style={{ width: '100%' }}>
+              <Button as={Link} external href="https://cowswap.finance/farms" style={{ width: '100%' }}>
                 Go to farms
               </Button>
             </CardBody>

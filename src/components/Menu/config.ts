@@ -12,18 +12,18 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.cowswap.finance/#/swap',
+        href: '/swap',
       },
       {
         label: 'Liquidity',
-        href: 'https://exchange.cowswap.finance/#/pool',
+        href: '/pool',
       },
     ],
   },
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: '/farms',
+    href: 'https://cowswap.finance/farms',
     status: {
       color: "failure", text: "LIVE"
     }
@@ -31,7 +31,7 @@ const config: MenuEntry[] = [
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: '/pools',
+    href: 'https://cowswap.finance/pools',
   },
   // {
   //   label: 'Prediction',
