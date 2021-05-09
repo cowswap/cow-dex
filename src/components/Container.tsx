@@ -23,7 +23,7 @@ const Container = styled.div`
     background-image: url('/images/arch-${({ theme }) => (theme.isDark ? 'dark' : 'light')}.svg'),
       url('/images/left-gouda.svg'), url('/images/right-gouda.svg');
     background-repeat: no-repeat;
-    background-position: bottom, top 10em left 8em, top 10em right 8em;
+    background-position: bottom, top 10em left 10em, top 10em right 10em;
     background-size: contain, 266px, 266px;
     min-height: 95vh;
   }
