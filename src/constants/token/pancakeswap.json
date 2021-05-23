@@ -7,9 +7,17 @@
     "patch": 0
   },
   "tags": {},
-  "logoURI": "https://exchange.pancakeswap.finance/images/pancakeswap.png",
+  "logoURI": "https://cowswap.finance/images/tokens/GOUDA.png",
   "keywords": ["pancake", "default"],
   "tokens": [
+    {
+      "name": "Gouda Token",
+      "symbol": "GOUDA",
+      "address": "0x90c2b27f2a71550714e14f4c882d908cdd46aa4b",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://cowswap.finance/images/tokens/GOUDA.png"
+    },
     {
       "name": "WBNB Token",
       "symbol": "WBNB",
