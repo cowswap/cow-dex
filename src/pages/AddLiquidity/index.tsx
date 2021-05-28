@@ -426,6 +426,7 @@ export default function AddLiquidity({
                         setShowConfirm(true)
                       }
                     }}
+                    disabled={!isValid || approvalA !== ApprovalState.APPROVED || approvalB !== ApprovalState.APPROVED}
                     variant={
                       !isValid && !!parsedAmounts[Field.CURRENCY_A] && !!parsedAmounts[Field.CURRENCY_B]
                         ? 'danger'

@@ -13,7 +13,7 @@
     {
       "name": "Gouda Token",
       "symbol": "GOUDA",
-      "address": "0x90c2b27f2a71550714e14f4c882d908cdd46aa4b",
+      "address": "0x14b06bf2c5b0afd259c47c4be39cb9368ef0be3f",
       "chainId": 97,
       "decimals": 18,
       "logoURI": "https://cowswap.finance/images/tokens/GOUDA.png"
