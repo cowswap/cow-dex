@@ -1493,10 +1493,10 @@
     buffer "^5.4.3"
     seedrandom "^3.0.5"
 
-"@cowswap/uikit@^^0.1.5":
-  version "0.1.5"
-  resolved "https://registry.npmjs.org/@cowswap/uikit/-/uikit-0.1.5.tgz#6e7c2ce7980bbefd2c1f844a45b772bd23a4b2cf"
-  integrity sha512-tNHJGhOc86M18c7Qh38Nh3zf/9LO33UDeamQNDbgSm37ivHXGAIKgyRM8AYWUTLVZPqpcnoybT9xO//H0hf6QA==
+"@cowswap/uikit@^0.1.9":
+  version "0.1.9"
+  resolved "https://registry.npmjs.org/@cowswap/uikit/-/uikit-0.1.9.tgz#8586c259912c3dc724a4f616ed7bcf5b2fd2b2c9"
+  integrity sha512-bXqSAefpECQa+r6nd4VdcYVcl4sC5dltPx+09JFXeHHtQrj/d/RnBwwy4eStphHYuTnoweq9+rGT0UQ1PhDOkA==
   dependencies:
     "@lottiefiles/lottie-player" "^1.0.3"
     "@popperjs/core" "^2.9.2"

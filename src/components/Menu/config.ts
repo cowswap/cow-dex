@@ -7,6 +7,16 @@ const config: MenuEntry[] = [
     href: '/',
   },
   {
+    label: 'Airdrop',
+    icon: 'AirdropIcon',
+    href: 'https://cowswap.finance/airdrop',
+  },
+  {
+    label: 'Presale',
+    icon: 'PresaleIcon',
+    href: 'https://cowswap.finance/presale',
+  },
+  {
     label: 'Trade',
     icon: 'TradeIcon',
     items: [
