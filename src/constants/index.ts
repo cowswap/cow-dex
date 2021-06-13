@@ -1,8 +1,8 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@lion.finance/sdk'
 
-export const ROUTER_ADDRESS = process.env.REACT_APP_ROUTER_ADDRESS || '0x6B3122BCFDB74FE8C260956cbAbEBc6BE38e772c'
-export const FACTORY_ADDRESS = process.env.REACT_APP_FACTORY_ADDRESS || '0x4c031a2f7e5b36d54be99717408f4d87d9871638'
-export const INIT_CODE = process.env.INIT_CODE ||  '0xd43c430bce5e559217f4be663662d8934f4488daf0fdd0c07e88e7a739401618'
+export const ROUTER_ADDRESS = process.env.REACT_APP_ROUTER_ADDRESS || '0xeA2855EfE513EE0bfd463A264af2cfdaEc73D75C'
+export const FACTORY_ADDRESS = process.env.REACT_APP_FACTORY_ADDRESS || '0x64e615DfC1f52dde25148A47d0d0Cb1Af7B5A8E4'
+export const INIT_CODE = process.env.INIT_CODE ||  '0xf8e932344ef50ad05e55f3ae23332a8e26310b80345ad885703e55d65c3688ce'
 
 
 // a list of tokens by chain

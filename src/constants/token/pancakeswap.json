@@ -19,6 +19,14 @@
       "logoURI": "https://cowswap.finance/images/tokens/GOUDA.png"
     },
     {
+      "name": "Cow usd Token",
+      "symbol": "COW-USD",
+      "address": "0x12aE57f0Dae724b9944F970fF55b2e462948190E",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xe9e7cea3dedca5984780bafc599bd69add087d56.png"
+    },
+    {
       "name": "WBNB Token",
       "symbol": "WBNB",
       "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
