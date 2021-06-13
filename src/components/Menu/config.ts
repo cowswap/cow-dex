@@ -1,4 +1,5 @@
 import { MenuEntry } from '@pancakeswap-libs/uikit'
+import { isMainnet } from 'constants/index'
 
 const config: MenuEntry[] = [
   {
@@ -9,12 +10,12 @@ const config: MenuEntry[] = [
   {
     label: 'Airdrop',
     icon: 'AirdropIcon',
-    href: 'https://cowswap.finance/airdrop',
+    href: '/',
   },
   {
     label: 'Presale',
     icon: 'PresaleIcon',
-    href: 'https://cowswap.finance/presale',
+    href: '/',
   },
   {
     label: 'Trade',
@@ -33,7 +34,7 @@ const config: MenuEntry[] = [
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: 'https://cowswap.finance/farms',
+    href: isMainnet ? 'https://cowswap.finance/farms' : 'https://testnet.cowswap.finance/farms',
     status: {
       color: "failure", text: "LIVE"
     }
@@ -41,7 +42,7 @@ const config: MenuEntry[] = [
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: 'https://cowswap.finance/pools',
+    href: isMainnet ? 'https://cowswap.finance/pools' : 'https://testnet.cowswap.finance/pools',
   },
   // {
   //   label: 'Prediction',
