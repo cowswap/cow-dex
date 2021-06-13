@@ -124,7 +124,7 @@ export default function RemoveLiquidity({
       { name: 'verifyingContract', type: 'address' },
     ]
     const domain = {
-      name: 'Pancake LPs',
+      name: 'CowswapFinance LPs',
       version: '1',
       chainId,
       verifyingContract: pair.liquidityToken.address,
@@ -157,6 +157,9 @@ export default function RemoveLiquidity({
       .send('eth_signTypedData_v4', [account, data])
       .then(splitSignature)
       .then((signature) => {
+        console.log({
+          signature
+        })
         setSignatureData({
           v: signature.v,
           r: signature.r,
@@ -243,6 +246,10 @@ export default function RemoveLiquidity({
     // we have a signataure, use permit versions of remove liquidity
     else if (signatureData !== null) {
       // removeLiquidityETHWithPermit
+      console.log({
+        signatureData,
+        deadlineFromNow
+      })
       if (oneCurrencyIsETH) {
         methodNames = ['removeLiquidityETHWithPermit', 'removeLiquidityETHWithPermitSupportingFeeOnTransferTokens']
         args = [
