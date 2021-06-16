@@ -1,5 +1,7 @@
 import { TokenAmount, Pair, Currency } from '@lion.finance/sdk'
 import { useMemo } from 'react'
+import { pack, keccak256 } from '@ethersproject/solidity'
+import { getCreate2Address } from '@ethersproject/address'
 import { abi as IUniswapV2PairABI } from '@uniswap/v2-core/build/IUniswapV2Pair.json'
 import { Interface } from '@ethersproject/abi'
 import { useActiveWeb3React } from '../hooks'
@@ -32,7 +34,11 @@ export function usePairs(currencies: [Currency | undefined, Currency | undefined
   const pairAddresses = useMemo(
     () =>
       tokens.map(([tokenA, tokenB]) => {
-        return tokenA && tokenB && !tokenA.equals(tokenB) ? Pair.getAddress(tokenA, tokenB, FACTORY_ADDRESS, INIT_CODE) : undefined
+        return tokenA && tokenB && !tokenA.equals(tokenB) ? getCreate2Address(
+          FACTORY_ADDRESS,
+          keccak256(['bytes'], [pack(['address', 'address'], [tokenA.address, tokenB.address])]),
+          INIT_CODE
+        ) : undefined
       }),
     [tokens]
   )
