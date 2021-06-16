@@ -35,7 +35,6 @@ export default function PoolFinder() {
 
   const [pairState, pair] = usePair(currency0 ?? undefined, currency1 ?? undefined)
   const addPair = usePairAdder()
-
   const TranslateString = useI18n()
   useEffect(() => {
     if (pair) {
@@ -54,7 +53,9 @@ export default function PoolFinder() {
 
   const position: TokenAmount | undefined = useTokenBalance(account ?? undefined, pair?.liquidityToken)
   const hasPosition = Boolean(position && JSBI.greaterThan(position.raw, JSBI.BigInt(0)))
-
+  console.log({
+    pairState, pair, position
+  })
   const handleCurrencySelect = useCallback(
     (currency: Currency) => {
       if (activeField === Fields.TOKEN0) {

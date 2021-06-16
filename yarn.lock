@@ -2660,10 +2660,10 @@
   resolved "https://registry.npmjs.org/@ledgerhq/logs/-/logs-5.50.0.tgz#29c6419e8379d496ab6d0426eadf3c4d100cd186"
   integrity sha512-swKHYCOZUGyVt4ge0u8a7AwNcA//h4nx5wIi0sruGye1IJ5Cva0GyK9L2/WdX+kWVTKp92ZiEo1df31lrWGPgA==
 
-"@lion.finance/sdk@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.npmjs.org/@lion.finance/sdk/-/sdk-1.0.7.tgz#4bba210326469e252fcf2da1cc1342f2b813d4d9"
-  integrity sha512-Or5hA3uHO0PxW5mZFaHdCdSuTbkOOKT5qni+rkTFTDSswamSBV/piYmj4eJ74EYVXHOwIzUkDeBEQrdRBqG2Dw==
+"@lion.finance/sdk@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.npmjs.org/@lion.finance/sdk/-/sdk-1.0.8.tgz#42605546358fa92bdd0629d91b5d2b109e1eb22b"
+  integrity sha512-7pNeug4KGkiwxJ+APtbaz8i595gN8boUnGYwWag9jNzifOdaVaXmg/OAJfmiW+/utNKsaAof6qciRTdz2/8bsA==
   dependencies:
     "@pancakeswap-libs/pancake-swap-core" "^0.1.0"
     big.js "^5.2.2"
