@@ -47,7 +47,7 @@ export const useGetPriceDataFromLP = () => {
     if (result) {
       const goudaReserve = new BigNumberJs(result[0]._hex)
       const busdReserve = new BigNumberJs(result[1]._hex)
-      const goudaUsd = goudaReserve.div(busdReserve)
+      const goudaUsd = busdReserve.div(goudaReserve)
       return goudaUsd.toNumber()
     }
   }
