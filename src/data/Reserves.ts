@@ -34,11 +34,7 @@ export function usePairs(currencies: [Currency | undefined, Currency | undefined
   const pairAddresses = useMemo(
     () =>
       tokens.map(([tokenA, tokenB]) => {
-        return tokenA && tokenB && !tokenA.equals(tokenB) ? getCreate2Address(
-          FACTORY_ADDRESS,
-          keccak256(['bytes'], [pack(['address', 'address'], [tokenA.address, tokenB.address])]),
-          INIT_CODE
-        ) : undefined
+        return tokenA && tokenB && !tokenA.equals(tokenB) ? Pair.getAddress(tokenA, tokenB, FACTORY_ADDRESS, INIT_CODE) : undefined
       }),
     [tokens]
   )
@@ -61,7 +57,7 @@ export function usePairs(currencies: [Currency | undefined, Currency | undefined
       const [token0, token1] = tokenA.sortsBefore(tokenB) ? [tokenA, tokenB] : [tokenB, tokenA]
       return [
         PairState.EXISTS,
-        new Pair(new TokenAmount(token0, reserve0.toString()), new TokenAmount(token1, reserve1.toString()))
+        new Pair(new TokenAmount(token0, reserve0.toString()), new TokenAmount(token1, reserve1.toString()), FACTORY_ADDRESS, INIT_CODE)
       ]
     })
   }, [results, tokens])
