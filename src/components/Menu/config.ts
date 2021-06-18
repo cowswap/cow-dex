@@ -72,25 +72,6 @@ const config: MenuEntry[] = [
     },
   },
   {
-    label: 'Teams & Profile',
-    icon: 'GroupsIcon',
-    href: '/',
-    // items: [
-    //   {
-    //     label: 'Leaderboard',
-    //     href: '/teams',
-    //   },
-    //   {
-    //     label: 'Task Center',
-    //     href: '/profile/tasks',
-    //   },
-    //   {
-    //     label: 'Your Profile',
-    //     href: '/profile',
-    //   },
-    // ],
-  },
-  {
     label: 'Info',
     icon: 'InfoIcon',
     href: '/',
@@ -114,15 +95,6 @@ const config: MenuEntry[] = [
     // ],
   },
   {
-    label: 'IFO',
-    icon: 'IfoIcon',
-    href: '/',
-    status: {
-      text: 'COMMING',
-      color: 'warning',
-    },
-  },
-  {
     label: 'More',
     icon: 'MoreIcon',
     href: '/',
@@ -138,6 +110,10 @@ const config: MenuEntry[] = [
       {
         label: 'Gouda Contract',
         href: 'https://bscscan.com/address/0x90c2b27f2a71550714e14f4c882d908cdd46aa4b',
+      },
+      {
+        label: 'Audit',
+        href: 'https://github.com/TechRate/Smart-Contract-Audits/blob/main/GoudaToken%20Full%20Smart%20Contract%20Security%20Audit.pdf',
       },
     ],
   },
