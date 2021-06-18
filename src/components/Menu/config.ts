@@ -5,17 +5,12 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: '/',
-  },
-  {
-    label: 'Airdrop',
-    icon: 'AirdropIcon',
-    href: '/',
+    href: 'https://cowswap.finance/',
   },
   {
     label: 'Presale',
     icon: 'PresaleIcon',
-    href: '/',
+    href: 'https://cowswap.finance/presale',
   },
   {
     label: 'Trade',
