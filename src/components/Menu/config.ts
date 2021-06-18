@@ -5,12 +5,12 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://cowswap.finance/',
+    href: 'https://cowswap.app/',
   },
   {
     label: 'Presale',
     icon: 'PresaleIcon',
-    href: 'https://cowswap.finance/presale',
+    href: 'https://cowswap.app/presale',
   },
   {
     label: 'Trade',
@@ -29,7 +29,7 @@ const config: MenuEntry[] = [
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: isMainnet ? 'https://cowswap.finance/farms' : 'https://testnet.cowswap.finance/farms',
+    href: isMainnet ? 'https://cowswap.app/farms' : 'https://testnet.cowswap.app/farms',
     status: {
       color: "failure", text: "LIVE"
     }
@@ -37,7 +37,7 @@ const config: MenuEntry[] = [
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: isMainnet ? 'https://cowswap.finance/pools' : 'https://testnet.cowswap.finance/pools',
+    href: isMainnet ? 'https://cowswap.app/pools' : 'https://testnet.cowswap.app/pools',
   },
   // {
   //   label: 'Prediction',
@@ -100,7 +100,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Docs',
-        href: 'https://docs.cowswap.finance',
+        href: 'https://docs.cowswap.app',
       },
       {
         label: 'Gouda Contract',
