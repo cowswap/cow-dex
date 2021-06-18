@@ -62,11 +62,6 @@ const config: MenuEntry[] = [
       color: 'warning',
     },
   },
-  // {
-  //   label: 'Collectibles',
-  //   icon: 'NftIcon',
-  //   href: '/collectibles',
-  // },
   {
     label: 'NFT',
     icon: 'TeamBattleIcon',
