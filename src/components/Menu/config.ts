@@ -30,9 +30,6 @@ const config: MenuEntry[] = [
     label: 'Farms',
     icon: 'FarmIcon',
     href: isMainnet ? 'https://cowswap.app/farms' : 'https://testnet.cowswap.app/farms',
-    status: {
-      color: "failure", text: "LIVE"
-    }
   },
   {
     label: 'Pools',
