@@ -53,7 +53,8 @@ export default function PoolFinder() {
 
   const position: TokenAmount | undefined = useTokenBalance(account ?? undefined, pair?.liquidityToken)
   const hasPosition = Boolean(position && JSBI.greaterThan(position.raw, JSBI.BigInt(0)))
-  console.log({
+  // eslint-disable-next-line no-console
+  console.debug({
     pairState, pair, position
   })
   const handleCurrencySelect = useCallback(

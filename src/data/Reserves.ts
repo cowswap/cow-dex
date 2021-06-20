@@ -1,7 +1,5 @@
 import { TokenAmount, Pair, Currency } from '@lion.finance/sdk'
 import { useMemo } from 'react'
-import { pack, keccak256 } from '@ethersproject/solidity'
-import { getCreate2Address } from '@ethersproject/address'
 import { abi as IUniswapV2PairABI } from '@uniswap/v2-core/build/IUniswapV2Pair.json'
 import { Interface } from '@ethersproject/abi'
 import { useActiveWeb3React } from '../hooks'
@@ -40,6 +38,7 @@ export function usePairs(currencies: [Currency | undefined, Currency | undefined
   )
 
   const results = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'getReserves')
+  // eslint-disable-next-line no-console
   console.debug({
     results, pairAddresses, tokens, FACTORY_ADDRESS, INIT_CODE
   })
