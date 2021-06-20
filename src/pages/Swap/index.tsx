@@ -443,12 +443,14 @@ const Swap = () => {
                     }}
                     style={{ width: '48%' }}
                     id="swap-button"
-                    // disabled={
-                    //   !isValid || approval !== ApprovalState.APPROVED || (priceImpactSeverity > 3 && !isExpertMode)
-                    // }
+                    disabled={
+                      !isValid ||
+                      approval !== ApprovalState.APPROVED ||
+                      (priceImpactSeverity > 3 && !isExpertMode)
+                    }
                     variant={isValid && priceImpactSeverity > 2 ? 'danger' : 'primary'}
                   >
-                    {!isExpertMode
+                    {priceImpactSeverity > 3 && !isExpertMode
                       ? `Price Impact High`
                       : `Swap${priceImpactSeverity > 2 ? ' Anyway' : ''}`}
                   </Button>
