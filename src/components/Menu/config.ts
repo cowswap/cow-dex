@@ -67,24 +67,16 @@ const config: MenuEntry[] = [
     label: 'Info',
     icon: 'InfoIcon',
     href: '/',
-    // items: [
-    //   {
-    //     label: 'Overview',
-    //     href: 'https://cowswap.info',
-    //   },
-    //   {
-    //     label: 'Tokens',
-    //     href: 'https://cowswap.info/tokens',
-    //   },
-    //   {
-    //     label: 'Pairs',
-    //     href: 'https://cowswap.info/pairs',
-    //   },
-    //   {
-    //     label: 'Accounts',
-    //     href: 'https://cowswap.info/accounts',
-    //   },
-    // ],
+    items: [
+      {
+        label: 'Pancake (Gouda - BNB)',
+        href: 'https://pancakeswap.info/pool/0x7b4b7bb3d157e38c1497d894ccc1946715128ac2',
+      },
+      {
+        label: 'Poocoin',
+        href: 'https://poocoin.app/tokens/0x14b06bf2c5b0afd259c47c4be39cb9368ef0be3f',
+      },
+    ],
   },
   {
     label: 'More',
@@ -101,7 +93,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Gouda Contract',
-        href: 'https://bscscan.com/address/0x90c2b27f2a71550714e14f4c882d908cdd46aa4b',
+        href: 'https://bscscan.com/address/0x14B06bF2C5B0AFd259c47c4be39cB9368ef0be3f',
       },
       {
         label: 'Audit',
