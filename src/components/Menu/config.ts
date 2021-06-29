@@ -76,6 +76,10 @@ const config: MenuEntry[] = [
         label: 'Poocoin',
         href: 'https://poocoin.app/tokens/0x14b06bf2c5b0afd259c47c4be39cb9368ef0be3f',
       },
+      {
+        label: 'Dex.guru',
+        href: 'https://dex.guru/token/0x14B06bF2C5B0AFd259c47c4be39cB9368ef0be3f-bsc',
+      },
     ],
   },
   {
