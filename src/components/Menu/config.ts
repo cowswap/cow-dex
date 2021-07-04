@@ -13,6 +13,15 @@ const config: MenuEntry[] = [
     href: 'https://cowswap.app/presale',
   },
   {
+    label: 'Lucky draw',
+    icon: 'LuckyDrawIcon',
+    href: 'https://cowswap.app/luckydraw',
+    status: {
+      text: "BETA",
+      color: "failure",
+    }
+  },
+  {
     label: 'Trade',
     icon: 'TradeIcon',
     items: [
@@ -69,6 +78,10 @@ const config: MenuEntry[] = [
     href: '/',
     items: [
       {
+        label: 'Dextools.io',
+        href: 'https://www.dextools.io/app/pancakeswap/pair-explorer/0x7b4b7bb3d157e38c1497d894ccc1946715128ac2',
+      },
+      {
         label: 'Pancake (Gouda - BNB)',
         href: 'https://pancakeswap.info/pool/0x7b4b7bb3d157e38c1497d894ccc1946715128ac2',
       },
@@ -81,6 +94,11 @@ const config: MenuEntry[] = [
         href: 'https://dex.guru/token/0x14B06bF2C5B0AFd259c47c4be39cB9368ef0be3f-bsc',
       },
     ],
+  },
+  {
+    label: 'Audit',
+    icon: 'AuditIcon',
+    href: 'https://github.com/TechRate/Smart-Contract-Audits/blob/main/GoudaToken%20Full%20Smart%20Contract%20Security%20Audit.pdf',
   },
   {
     label: 'More',
@@ -98,10 +116,6 @@ const config: MenuEntry[] = [
       {
         label: 'Gouda Contract',
         href: 'https://bscscan.com/address/0x14B06bF2C5B0AFd259c47c4be39cB9368ef0be3f',
-      },
-      {
-        label: 'Audit',
-        href: 'https://github.com/TechRate/Smart-Contract-Audits/blob/main/GoudaToken%20Full%20Smart%20Contract%20Security%20Audit.pdf',
       },
     ],
   },
