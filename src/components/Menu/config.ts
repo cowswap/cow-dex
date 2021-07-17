@@ -57,10 +57,10 @@ const config: MenuEntry[] = [
   {
     label: 'Lottery',
     icon: 'TicketIcon',
-    href: '/',
+    href: 'https://cowswap.app/lottery',
     status: {
-      text: 'COMMING',
-      color: 'warning',
+      text: 'LIVE',
+      color: 'failure',
     },
   },
   {
