@@ -4,7 +4,7 @@ export const isMainnet = process.env.REACT_APP_CHAIN_ID === '56'
 
 export const ROUTER_ADDRESS = process.env.REACT_APP_ROUTER_ADDRESS || '0xE9797EC96C3728D4A14493E0CAE21f216DbE6b3b'
 export const FACTORY_ADDRESS = process.env.REACT_APP_FACTORY_ADDRESS || '0xb9515631DB270b81cA1d1E196f9fe932E948EbBD'
-export const INIT_CODE = process.env.INIT_CODE ||  '0xdd091a1206a5e916e487a5ae1bbd8a6db04e1e7d4c97bc28c984d8800c5ced80'
+export const INIT_CODE = process.env.REACT_APP_INIT_CODE ||  '0xdd091a1206a5e916e487a5ae1bbd8a6db04e1e7d4c97bc28c984d8800c5ced80'
 
 
 // a list of tokens by chain
